@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "@styles/globals.css";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
           </div>
           <main className="app">
             <Nav />
-            {children}
+            <Suspense>
+              {children}
+            </Suspense>
           </main>
         </Provider>
       </body>
