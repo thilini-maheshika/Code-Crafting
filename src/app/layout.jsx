@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
-import Nav from "@components/Nav";
-import Provider from "@components/Provider";
+import Nav from "@src/components/Nav";
+import Provider from "@src/components/Provider";
 import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
